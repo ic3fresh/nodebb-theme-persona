@@ -82,6 +82,8 @@
 			<span>[[user:age]]</span>
 			<strong>{age}</strong>
 			<!-- ENDIF age -->
+
+                        <!-- IMPORT partials/account/custom_fields_flex.tpl -->
 		</div>
 	</div>
 
