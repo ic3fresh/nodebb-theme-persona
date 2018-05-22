@@ -9,6 +9,7 @@
 </a>
 <!-- END upvoters -->
 
+<!-- IF !downvote:disabled -->
 <h3>[[global:downvoters]] <small>({downvoteCount})</small></h3>
 <!-- BEGIN downvoters -->
 <a href="{config.relative_path}/user/{downvoters.userslug}">
@@ -19,3 +20,4 @@
 <!-- ENDIF downvoters.picture -->
 </a>
 <!-- END downvoters -->
+<!-- ENDIF !downvote:disabled -->
