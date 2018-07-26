@@ -5,16 +5,16 @@
 		<meta itemprop="name" content="{function.stripTags, title}">
 
 		<div class="col-md-6 col-sm-9 col-xs-10 content">
-			<div class="avatar pull-left" title="{topics.user.username}">
+			<div class="avatar pull-left" title="{topics.teaser.user.username}">
 				<!-- IF showSelect -->
 				<div class="select" component="topic/select">
 					<!-- IF topics.thumb -->
 					<img src="{topics.thumb}" class="user-img" />
 					<!-- ELSE -->
 					<!-- IF topics.user.picture -->
-					<img component="user/picture" data-uid="{topics.user.uid}" src="{topics.user.picture}" class="user-img" />
+					<img component="user/picture" data-uid="{topics.teaser.user.uid}" src="{topics.teaser.user.picture}" class="user-img" />
 					<!-- ELSE -->
-					<div class="user-icon" style="background-color: {topics.user.icon:bgColor};">{topics.user.icon:text}</div>
+					<div class="user-icon" style="background-color: {topics.teaser.user.icon:bgColor};">{topics.teaser.user.icon:text}</div>
 					<!-- ENDIF topics.user.picture -->
 					<!-- ENDIF topics.thumb -->
 					<i class="fa fa-check"></i>
@@ -22,14 +22,14 @@
 				<!-- ENDIF showSelect -->
 
 				<!-- IF !showSelect -->
-				<a href="<!-- IF topics.user.userslug -->{config.relative_path}/user/{topics.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.user.userslug -->" class="pull-left">
+				<a href="<!-- IF topics.teaser.user.userslug -->{config.relative_path}/user/{topics.teaser.user.userslug}<!-- ELSE -->#<!-- ENDIF topics.teaser.user.userslug -->" class="pull-left">
 					<!-- IF topics.thumb -->
 					<img src="{topics.thumb}" class="user-img" />
 					<!-- ELSE -->
 					<!-- IF topics.user.picture -->
-					<img component="user/picture" data-uid="{topics.user.uid}" src="{topics.user.picture}" class="user-img" />
+					<img component="user/picture" data-uid="{topics.teaser.user.uid}" src="{topics.teaser.user.picture}" class="user-img" />
 					<!-- ELSE -->
-					<div class="user-icon" style="background-color: {topics.user.icon:bgColor};">{topics.user.icon:text}</div>
+					<div class="user-icon" style="background-color: {topics.teaser.user.icon:bgColor};">{topics.teaser.user.icon:text}</div>
 					<!-- ENDIF topics.user.picture -->
 					<!-- ENDIF topics.thumb -->
 				</a>
