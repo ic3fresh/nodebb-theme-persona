@@ -87,7 +87,12 @@
 			<strong>{age}</strong>
 			<!-- ENDIF age -->
 
-                        <!-- IMPORT partials/account/custom_fields_flex.tpl -->
+            <!-- IMPORT partials/account/custom_fields_flex.tpl -->
+
+			<div class="text-center">
+				<span>Odznaczenia użytkownika:</span>
+				<!-- IMPORT partials/awards_profile_flex.tpl -->
+			</div>
 		</div>
 	</div>
 
