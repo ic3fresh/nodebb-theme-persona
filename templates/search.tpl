@@ -110,10 +110,12 @@
 									<select id="post-sort-by" class="form-control">
 										<option value="relevance">[[search:relevance]]</option>
 										<option value="timestamp">[[search:post-time]]</option>
-										<option value="teaser.timestamp">[[search:last-reply-time]]</option>
+										<option value="votes">[[search:votes]]</option>
+										<option value="topic.lastposttime">[[search:last-reply-time]]</option>
 										<option value="topic.title">[[search:topic-title]]</option>
 										<option value="topic.postcount">[[search:number-of-replies]]</option>
 										<option value="topic.viewcount">[[search:number-of-views]]</option>
+										<option value="topic.votes">[[search:topic-votes]]</option>
 										<option value="topic.timestamp">[[search:topic-start-date]]</option>
 										<option value="user.username">[[search:username]]</option>
 										<option value="category.name">[[search:category]]</option>
@@ -185,7 +187,7 @@
 								<!-- IF posts.user.picture -->
 								<img class="user-img" title="{posts.user.username}" src="{posts.user.picture}"/>
 								<!-- ELSE -->
-								<div class="user-icon user-img" style="background-color: {posts.user.icon:bgColor};">{posts.user.icon:text}</div>
+								<div class="user-icon user-img" title="{posts.user.username}" style="background-color: {posts.user.icon:bgColor};">{posts.user.icon:text}</div>
 								<!-- ENDIF posts.user.picture -->
 							</a>
 							<a href="{config.relative_path}/category/{posts.category.slug}">[[global:posted_in, {posts.category.name}]] <i class="fa {posts.category.icon}"></i> <span class="timeago" title="{posts.timestampISO}"></span></a>
