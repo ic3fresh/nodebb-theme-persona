@@ -135,7 +135,7 @@
 			</div>
 			<div class="panel-body">
 			<!-- BEGIN ips -->
-				<div>{ips.ip}</div>
+				<div>{ips}</div>
 			<!-- END ips -->
 			</div>
 		</div>
