@@ -16,8 +16,6 @@
 			<a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->" itemprop="author" data-username="{posts.user.username}" data-uid="{posts.user.uid}">{posts.user.username}</a>
 		</strong>
 
-		<!-- IMPORT partials/topic/badge.tpl -->
-
 		<!-- IF posts.user.banned -->
 		<span class="label label-danger">[[user:banned]]</span>
 		<!-- ENDIF posts.user.banned -->
@@ -41,8 +39,15 @@
 				<!-- END posts.user.custom_profile_info -->
 				<!-- ENDIF posts.user.custom_profile_info.length -->
 			</span>
+			
 		</span>
+
+		<br />
+
+		<!-- IMPORT partials/topic/badge.tpl -->
 		<span class="bookmarked"><i class="fa fa-bookmark-o"></i></span>
+
+
 
 	</small>
 </div>
