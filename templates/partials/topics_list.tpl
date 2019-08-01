@@ -11,7 +11,7 @@
 					<!-- IF topics.thumb -->
 					<img src="{topics.thumb}" class="user-img not-responsive" />
 					<!-- ELSE -->
-					{buildAvatar(topics.user, "46", true, "not-responsive")}
+					{buildAvatar(topics.teaser.user, "46", true, "not-responsive")}
 					<!-- ENDIF topics.thumb -->
 					<i class="fa fa-check"></i>
 				</div>
@@ -22,7 +22,7 @@
 					<!-- IF topics.thumb -->
 					<img src="{topics.thumb}" class="user-img not-responsive" />
 					<!-- ELSE -->
-					{buildAvatar(topics.user, "46", true, "not-responsive")}
+					{buildAvatar(topics.teaser.user, "46", true, "not-responsive")}
 					<!-- ENDIF topics.thumb -->
 				</a>
 				<!-- ENDIF !showSelect -->
